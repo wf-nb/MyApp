@@ -1,0 +1,2 @@
+# MyApp
+Some awesome application.
