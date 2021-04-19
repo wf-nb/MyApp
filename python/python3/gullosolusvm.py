@@ -5,10 +5,10 @@ import requests
 class solusVM_Client():
     def __init__(self):
         self.url = "solusvm.gullo.me"
-        self.key = "NQ9RU-H4ET0-AL9NO"
-        self.hash = "f1666148fc00fba83bf327eaf4af58f04eaea6e9"
-        self.bot = "1653363243:AAHx5w1nkyMto_f5G5pjPMNOoajeJdr1atI"
-        self.chat = "1054232996"
+        self.key = "AAAAA-BBBBB-CCCCC"
+        self.hash = "WFTESTHASH"
+        self.bot = "WFTESTBOT"
+        self.chat = "WFTESTCHAT"
         self.node = "Nat-Fin-Gullo-01"
 
     def sQuery(self, values):
@@ -42,7 +42,7 @@ class solusVM_Client():
 if __name__ == "__main__":
     svmc = solusVM_Client()
     status = svmc.get_status()
-    print(status)
+    #print(status)
     if "online" not in status:
         print("已离线，正在启动")
         svmc.boot()
